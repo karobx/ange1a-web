@@ -1,0 +1,151 @@
+@import url("https://fonts.bunny.net/css?family=cormorant-garamond:500,600,700|source-sans-3:400,500,600,700");
+@import "tailwindcss";
+
+:root {
+  --font-cormorant: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-source-sans: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  --background: #fcfaf4;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-elevated: rgba(255, 255, 255, 0.88);
+  --text-primary: #332b21;
+  --text-secondary: #756b5a;
+  --text-hint: #a39684;
+  --accent: #b58a3d;
+  --accent-muted: rgba(181, 138, 61, 0.12);
+  --glass-border: rgba(51, 43, 33, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.6);
+  --shadow-tint: rgba(51, 43, 33, 0.08);
+  --shadow-deep: rgba(51, 43, 33, 0.14);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-hint: var(--text-hint);
+  --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
+  --color-glass-border: var(--glass-border);
+  --font-sans: var(--font-source-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-source-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 50% at 12% 0%, rgba(181, 138, 61, 0.07), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 88% 8%, rgba(241, 236, 228, 0.9), transparent 50%),
+    linear-gradient(180deg, #fcfaf4 0%, #f7f3eb 52%, #f3ede3 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.font-display {
+  font-family: var(--font-cormorant);
+}
+
+.glass-panel {
+  border: 1px solid var(--glass-border);
+  background: var(--surface);
+  box-shadow:
+    0 1px 0 var(--glass-highlight) inset,
+    0 18px 44px var(--shadow-tint);
+  backdrop-filter: blur(12px);
+}
+
+.glass-panel-elevated {
+  border: 1px solid var(--glass-border);
+  background: var(--surface-elevated);
+  box-shadow:
+    0 1px 0 var(--glass-highlight) inset,
+    0 24px 56px var(--shadow-deep);
+  backdrop-filter: blur(16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.prose-marketing h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.prose-marketing h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-marketing p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.prose-marketing ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.prose-marketing li {
+  margin-bottom: 0.35rem;
+}
+
+.prose-marketing table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.prose-marketing th,
+.prose-marketing td {
+  border: 1px solid var(--glass-border);
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+.prose-marketing th {
+  color: var(--text-primary);
+  background: var(--surface-elevated);
+}
+
+.prose-marketing a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
