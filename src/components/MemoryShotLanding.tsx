@@ -203,7 +203,7 @@ export function MemoryShotLanding({ locale }: { locale: Locale }) {
       >
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <div className="glass-panel-elevated overflow-hidden rounded-[1.75rem] p-8 md:grid md:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] md:items-center md:gap-10 md:p-10">
+            <div className="glass-panel-elevated overflow-hidden rounded-[1.75rem] p-8 md:grid md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:gap-10 lg:gap-14 md:p-10">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#b58a3d]">
                   {c.cleanupEyebrow}
@@ -229,8 +229,8 @@ export function MemoryShotLanding({ locale }: { locale: Locale }) {
                   ))}
                 </ul>
               </div>
-              <div className="mt-8 md:mt-0">
-                <div className="rounded-[1.5rem] bg-[#b58a3d]/[0.06] p-2 ring-1 ring-[#b58a3d]/15">
+              <div className="mt-8 flex justify-center md:mt-0 md:justify-end">
+                <div className="w-full max-w-[200px] sm:max-w-[220px] rounded-[1.5rem] bg-[#b58a3d]/[0.06] p-2 ring-1 ring-[#b58a3d]/15">
                   <Image
                     src="/assets/memoryshot-cleanup.png"
                     alt={
