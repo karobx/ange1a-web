@@ -17,6 +17,9 @@ function localizedPath(pathname: string, locale: Locale) {
   if (pathname.startsWith("/memoryshot")) {
     return `/memoryshot/${locale}/`;
   }
+  if (pathname.startsWith("/lumina")) {
+    return `/lumina/${locale}/`;
+  }
   return `/sparks/${locale}/`;
 }
 
@@ -45,6 +48,17 @@ function productItems(locale: Locale) {
       logo: "/assets/memoryshot-logo.png",
       logoAlt: "MemoryShot",
       accent: true,
+    },
+    {
+      href: "/lumina/",
+      title: isZh ? "晶靈 / Lumina" : "Lumina / 晶靈",
+      desc: isZh
+        ? "依八字命盤同流日，每日推薦最適合配戴嘅水晶。"
+        : "Daily crystal guidance from your Bazi chart and today's elemental flow.",
+      platform: "iOS",
+      logo: "/assets/lumina-logo.png",
+      logoAlt: isZh ? "晶靈 Lumina" : "Lumina",
+      accent: false,
     },
     {
       href: null,

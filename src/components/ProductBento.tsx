@@ -155,6 +155,20 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
       ctaLabel: isZh ? "了解 MemoryShot" : "Explore MemoryShot",
     },
     {
+      id: "lumina",
+      href: "/lumina/",
+      eyebrow: isZh ? "iOS 水晶 app" : "iOS crystal app",
+      eyebrowTone: "accent",
+      title: isZh ? "晶靈 / Lumina" : "Lumina / 晶靈",
+      description: isZh
+        ? "依八字命盤同流日，每日推薦最適合配戴嘅水晶。"
+        : "Daily crystal guidance from your Bazi chart and today's elemental flow.",
+      logoSrc: "/assets/lumina-logo.png",
+      logoAlt: isZh ? "晶靈 Lumina" : "Lumina",
+      platform: "iOS",
+      ctaLabel: isZh ? "了解 Lumina" : "Explore Lumina",
+    },
+    {
       id: "jiyi",
       eyebrow: isZh ? "即將上線" : "Coming soon",
       eyebrowTone: "muted",

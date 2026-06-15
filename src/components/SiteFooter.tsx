@@ -29,6 +29,9 @@ export function SiteFooter() {
           <Link href="/memoryshot/" className="hover:text-text-primary">
             {nav.memoryshot}
           </Link>
+          <Link href="/lumina/" className="hover:text-text-primary">
+            {nav.lumina}
+          </Link>
           <span className="text-text-hint">{nav.jiyi} · {locale === "zh-Hant" ? "即將上線" : "Coming soon"}</span>
         </div>
       </div>

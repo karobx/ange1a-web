@@ -80,6 +80,36 @@ export function memoryshotApplicationJsonLd(locale: "zh-Hant" | "en") {
   };
 }
 
+export function luminaApplicationJsonLd(locale: "zh-Hant" | "en") {
+  const c = locale === "zh-Hant"
+    ? {
+        name: "晶靈 Lumina",
+        alternateName: "Lumina",
+        description:
+          "依八字命盤同今日流日，每日推薦最適合配戴嘅水晶；管理收藏、查百科、追蹤淨化。",
+      }
+    : {
+        name: "Lumina",
+        alternateName: "晶靈",
+        description:
+          "Daily crystal guidance from your Bazi chart and elemental flow. Manage your collection, browse the encyclopedia, track cleansing.",
+      };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: c.name,
+    alternateName: c.alternateName,
+    description: c.description,
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "iOS",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    author: { "@type": "Organization", name: "Ange1a" },
+    url: "https://ange1a.com/lumina/",
+    image: "https://ange1a.com/assets/lumina-logo.png",
+  };
+}
+
 export function angelaProjectJsonLd(locale: "zh-Hant" | "en") {
   const isZh = locale === "zh-Hant";
 

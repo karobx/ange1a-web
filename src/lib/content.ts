@@ -4,13 +4,14 @@ export const SITE_URL = "https://ange1a.com";
 export const SPARKS_CANONICAL = `${SITE_URL}/sparks`;
 export const MEMORYSHOT_APP_STORE_URL =
   "https://apps.apple.com/gb/app/memoryshot/id6775766486";
+export const LUMINA_CANONICAL = `${SITE_URL}/lumina`;
 
 export const copy = {
   hub: {
     "zh-Hant": {
       title: "Ange1a",
       description:
-        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，記一筆即將推出多人分帳 app。",
+        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，晶靈 Lumina 結合八字命盤與水晶指引，記一筆即將推出多人分帳 app。",
       heroTitle: "創意工具，",
       heroTitleAccent: "為執行而生",
       heroSub:
@@ -19,7 +20,7 @@ export const copy = {
     en: {
       title: "Ange1a",
       description:
-        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. 記一筆 group expense splitting is coming soon.",
+        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. Lumina (晶靈) pairs Bazi charts with daily crystal guidance. 記一筆 group expense splitting is coming soon.",
       heroTitle: "Creative tools",
       heroTitleAccent: "built to ship",
       heroSub:
@@ -337,11 +338,204 @@ export const copy = {
       faqTeaser: "FAQ and support",
     },
   },
+  lumina: {
+    "zh-Hant": {
+      title: "晶靈 / Lumina",
+      description:
+        "晶靈 Lumina 係 iOS 水晶伴侶 app：依八字命盤同今日流日，每日推薦最適合配戴嘅水晶；管理收藏、查百科、追蹤淨化。Ange1a 出品。",
+      headline: "晶靈 Lumina",
+      sub: "懂水晶，更懂自己。",
+      status: "iOS",
+      eyebrow: "Ange1a · iOS",
+      heroTitle: "每日專屬",
+      heroTitleAccent: "水晶指引",
+      heroSub:
+        "晶靈 Lumina 結合八字命盤與五行流日，為你推薦最適合配戴的水晶。管理收藏、查閱百科、追蹤淨化——全部在本機完成，無需網路。",
+      heroVisualCaption: "紫晶暖金、奶油質感、優雅玻璃卡片的靈性介面",
+      logoAlt: "晶靈 Lumina app 圖示",
+      ctaPrimary: "了解功能",
+      ctaSecondary: "命盤分析",
+      ctaMarketing: "行銷資訊",
+      ctaSupport: "支援與常見問題",
+      workflowTitle: "從命盤到配戴，一條清晰路徑",
+      workflowSub: "先建立八字命盤，再依今日流日推薦水晶，最後管理你的收藏。",
+      workflow: [
+        {
+          title: "命盤",
+          body: "輸入出生日期、時辰同出生地，本機計算八字四柱、日主同五行分布。",
+        },
+        {
+          title: "今日",
+          body: "依命盤同流日五行，每日推薦最適合配戴的水晶同配戴理由。",
+        },
+        {
+          title: "收藏",
+          body: "記錄你擁有嘅水晶，依五行分類，追蹤淨化狀態同配戴習慣。",
+        },
+        {
+          title: "百科",
+          body: "完整水晶圖鑑：五行屬性、功效、配戴建議，從入門到進階一次查清楚。",
+        },
+      ],
+      featuresEyebrow: "核心功能",
+      featuresTitle: "本機運算，私隱優先",
+      featuresBody:
+        "所有八字計算同水晶推薦皆在你裝置上完成，唔需要 API Token，亦唔會上傳個人資料。",
+      features: [
+        {
+          title: "八字命盤",
+          body: "日主、五行分布、喜用神一目了然。支援真太陽時校正同多地出生地名。",
+        },
+        {
+          title: "每日水晶指引",
+          body: "結合命盤體質同今日流日，推薦最適合配戴嘅水晶，附詳細理由。",
+        },
+        {
+          title: "水晶收藏管理",
+          body: "依五行分類、追蹤淨化間隔、附相片記錄，輕鬆掌握每一顆水晶。",
+        },
+        {
+          title: "完整水晶百科",
+          body: "內建豐富水晶資料：五行、功效、左右手配戴建議，支援中英雙語。",
+        },
+      ],
+      designTitle: "靈性而精緻的介面",
+      designBody:
+        "紫晶暖金配色、奶油質感背景同 refined glass 卡片。介面安靜優雅，讓水晶同命盤成為主角。",
+      productIntroEyebrow: "產品 · iOS App",
+      productIntroTitle: "晶靈 Lumina",
+      productIntroTagline: "八字命盤 × 每日水晶指引",
+      productIntroParagraphs: [
+        "晶靈 Lumina 是一款結合東方命理與水晶文化的 iPhone 應用。建立八字命盤後，app 會依你的日主、五行分布同今日流日，每日推薦最適合配戴的水晶，並解釋推薦理由。",
+        "你可以管理水晶收藏、追蹤淨化狀態、查閱完整水晶百科。所有八字計算同推薦邏輯皆在本機完成，無需網路連線，個人資料唔會離開你嘅裝置。",
+        "紫晶暖金配色、優雅玻璃卡片同精緻排版，讓每日水晶指引成為一種寧靜而有意義的儀式。",
+      ],
+      productIntroStack: "SwiftUI · iOS 18 · SwiftData",
+      statusNote: "晶靈 Lumina 即將於 App Store 上架。",
+      backToHub: "← Ange1a",
+      supportTitle: "本機優先，私隱清晰",
+      supportBody:
+        "晶靈 Lumina 只請求核心功能所需權限。命盤、水晶收藏同推薦資料預設儲存喺你裝置本地，唔會自動上傳到我哋伺服器。",
+      faqTeaser: "常見問題同支援",
+      marketingTitle: "關於晶靈 Lumina",
+      marketingSubtitle: "你的水晶靈性伴侶",
+      marketingIntro:
+        "晶靈 Lumina（英文名 Lumina）係 Ange1a 出品嘅 iOS 應用，將八字命理同水晶文化結合，幫你了解體質、選對水晶、養成每日配戴習慣。",
+      marketingHighlights: [
+        "依八字命盤同流日，每日推薦最適合配戴嘅水晶",
+        "完整水晶百科：五行、功效、配戴建議",
+        "管理水晶收藏，追蹤淨化狀態",
+        "全部本機運算，無需網路，私隱優先",
+        "支援繁體中文同 English",
+      ],
+      marketingDeveloper: "Ange1a",
+      marketingContact: "info@ange1a.com",
+      marketingPlatform: "iPhone · iOS 18 或以上",
+      marketingCategory: "生活風格 / Lifestyle",
+    },
+    en: {
+      title: "Lumina / 晶靈",
+      description:
+        "Lumina (晶靈) is an iOS crystal companion: daily crystal guidance from your Bazi chart and today's flow day. Manage your collection, browse the encyclopedia, track cleansing. By Ange1a.",
+      headline: "Lumina / 晶靈",
+      sub: "Know your crystals. Know yourself.",
+      status: "iOS",
+      eyebrow: "Ange1a · iOS",
+      heroTitle: "Daily crystal",
+      heroTitleAccent: "guidance made for you",
+      heroSub:
+        "Lumina pairs your Bazi chart with the day's five-element flow to recommend the crystals best suited for you. Manage your collection, browse the encyclopedia, track cleansing — all on-device, no network required.",
+      heroVisualCaption:
+        "Amethyst warmth, antique gold accents, and refined glass cards in a calm spiritual UI",
+      logoAlt: "Lumina app icon",
+      ctaPrimary: "Explore features",
+      ctaSecondary: "Bazi chart",
+      ctaMarketing: "Marketing info",
+      ctaSupport: "Support & FAQ",
+      workflowTitle: "From chart to wearing",
+      workflowSub:
+        "Build your Bazi profile first, get daily crystal picks, then manage your collection.",
+      workflow: [
+        {
+          title: "Chart",
+          body: "Enter birth date, time, and place. Bazi pillars, day master, and element balance computed on-device.",
+        },
+        {
+          title: "Today",
+          body: "Daily crystal recommendations based on your chart and today's elemental flow, with clear reasons.",
+        },
+        {
+          title: "Collection",
+          body: "Log crystals you own, sort by element, track cleansing intervals and wearing habits.",
+        },
+        {
+          title: "Encyclopedia",
+          body: "Full crystal library: elements, benefits, wearing guidance — beginner to advanced.",
+        },
+      ],
+      featuresEyebrow: "Core features",
+      featuresTitle: "On-device, privacy-first",
+      featuresBody:
+        "All Bazi calculations and crystal recommendations run locally on your device — no API tokens, no personal data uploaded.",
+      features: [
+        {
+          title: "Bazi chart",
+          body: "Day master, element distribution, and favorable elements at a glance. True solar time and preset birth places supported.",
+        },
+        {
+          title: "Daily crystal guidance",
+          body: "Recommendations that match your constitution and today's flow, with detailed explanations.",
+        },
+        {
+          title: "Crystal inventory",
+          body: "Sort by element, track cleansing intervals, attach photos — every crystal in one place.",
+        },
+        {
+          title: "Crystal encyclopedia",
+          body: "Rich built-in library: elements, benefits, left/right hand guidance. Traditional Chinese and English.",
+        },
+      ],
+      designTitle: "Spiritual, refined design",
+      designBody:
+        "Amethyst and antique gold on a warm cream canvas with refined glass cards. Quiet chrome — your chart and crystals take center stage.",
+      productIntroEyebrow: "Product · iOS App",
+      productIntroTitle: "Lumina / 晶靈",
+      productIntroTagline: "Bazi chart × daily crystal guidance",
+      productIntroParagraphs: [
+        "Lumina (晶靈) is an iPhone app that blends Eastern metaphysics with crystal culture. After building your Bazi chart, the app recommends the best crystals to wear each day based on your day master, element balance, and today's flow — with clear reasons why.",
+        "Manage your crystal collection, track cleansing, and browse a full encyclopedia. All Bazi math and recommendation logic runs on-device with no network required. Your personal data never leaves your phone.",
+        "Amethyst warmth, elegant glass cards, and careful typography turn daily crystal guidance into a calm, meaningful ritual.",
+      ],
+      productIntroStack: "SwiftUI · iOS 18 · SwiftData",
+      statusNote: "Lumina is coming soon to the App Store.",
+      backToHub: "← Ange1a",
+      supportTitle: "Local-first, privacy-forward",
+      supportBody:
+        "Lumina only requests permissions needed for core features. Charts, collections, and recommendations stay on your device by default — nothing is uploaded to our servers automatically.",
+      faqTeaser: "FAQ and support",
+      marketingTitle: "About Lumina / 晶靈",
+      marketingSubtitle: "Your crystal spiritual companion",
+      marketingIntro:
+        "Lumina (晶靈) is an iOS app by Ange1a that combines Bazi metaphysics with crystal culture — helping you understand your constitution, choose the right crystals, and build a daily wearing practice.",
+      marketingHighlights: [
+        "Daily crystal picks from your Bazi chart and elemental flow",
+        "Full encyclopedia: elements, benefits, wearing guidance",
+        "Manage your collection and track cleansing",
+        "All on-device — no network required, privacy-first",
+        "Traditional Chinese and English supported",
+      ],
+      marketingDeveloper: "Ange1a",
+      marketingContact: "info@ange1a.com",
+      marketingPlatform: "iPhone · iOS 18 or later",
+      marketingCategory: "Lifestyle",
+    },
+  },
   nav: {
     "zh-Hant": {
       products: "產品",
       sparks: "Sparks",
       memoryshot: "MemoryShot",
+      lumina: "晶靈 Lumina",
       jiyi: "記一筆",
       support: "支援",
       privacy: "私隱",
@@ -350,6 +544,7 @@ export const copy = {
       products: "Products",
       sparks: "Sparks",
       memoryshot: "MemoryShot",
+      lumina: "晶靈 Lumina",
       jiyi: "記一筆",
       support: "Support",
       privacy: "Privacy",
@@ -407,7 +602,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "Ange1a 仲有咩其他產品？",
-      a: "除 Sparks 同 MemoryShot 外，記一筆（iOS 多人分帳）即將上線。",
+      a: "除 Sparks、MemoryShot 同晶靈 Lumina 外，記一筆（iOS 多人分帳）即將上線。",
     },
   ],
   en: [
@@ -449,7 +644,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "What else does Ange1a make?",
-      a: "Alongside Sparks and MemoryShot, 記一筆 (iOS group expense splitting) is coming soon.",
+      a: "Alongside Sparks, MemoryShot, and Lumina (晶靈), 記一筆 (iOS group expense splitting) is coming soon.",
     },
   ],
 };
@@ -657,3 +852,74 @@ export function localeFromParam(param: string): Locale | null {
   if (param === "zh-Hant" || param === "en") return param;
   return null;
 }
+
+export const luminaFaqItems: Record<Locale, FAQItem[]> = {
+  "zh-Hant": [
+    {
+      q: "晶靈 Lumina 係咩？",
+      a: "晶靈 Lumina 係 Ange1a 出品嘅 iOS 水晶伴侶 app。依你嘅八字命盤同今日流日，每日推薦最適合配戴嘅水晶；另有水晶收藏管理、百科同淨化追蹤功能。",
+    },
+    {
+      q: "需要網路先用到？",
+      a: "唔需要。所有八字計算同水晶推薦皆在你裝置本機完成，離線亦可正常使用。",
+    },
+    {
+      q: "點樣建立命盤？",
+      a: "首次開啟 app 時輸入出生日期、時辰同出生地即可。支援真太陽時校正同預設出生地名（如香港）。",
+    },
+    {
+      q: "每日水晶推薦點計出嚟？",
+      a: "app 會分析你嘅日主、五行分布同喜用神，再結合今日流日嘅五行，推薦最適合平衡能量嘅水晶，並附詳細理由。",
+    },
+    {
+      q: "點樣管理水晶收藏？",
+      a: "喺「我的水晶」加入你擁有嘅水晶，可附相片、依五行分類、設定淨化間隔，app 會提醒你何時需要淨化。",
+    },
+    {
+      q: "晶靈 Lumina 需要咩權限？",
+      a: "相簿（為水晶附加相片，可選）、通知（每日提醒，可選）。命盤同收藏資料儲存喺本機，唔會自動上傳。",
+    },
+    {
+      q: "支援邊啲語言？",
+      a: "支援繁體中文同 English，可喺設定切換。",
+    },
+    {
+      q: "點樣聯絡支援？",
+      a: "電郵 info@ange1a.com。產品官網：https://ange1a.com/lumina/",
+    },
+  ],
+  en: [
+    {
+      q: "What is Lumina (晶靈)?",
+      a: "Lumina (晶靈) is an iOS crystal companion app by Ange1a. It recommends crystals to wear each day based on your Bazi chart and today's elemental flow, plus collection management, encyclopedia, and cleansing tracking.",
+    },
+    {
+      q: "Does it require internet?",
+      a: "No. All Bazi calculations and crystal recommendations run on-device. The app works offline.",
+    },
+    {
+      q: "How do I create my Bazi chart?",
+      a: "Enter your birth date, time, and place on first launch. True solar time correction and preset birth places (e.g. Hong Kong) are supported.",
+    },
+    {
+      q: "How are daily crystal recommendations calculated?",
+      a: "The app analyzes your day master, element balance, and favorable elements, then combines them with today's flow to suggest crystals that best balance your energy — with clear reasons.",
+    },
+    {
+      q: "How do I manage my crystal collection?",
+      a: "In My Crystals, add crystals you own with optional photos, sort by element, set cleansing intervals, and get reminders when it's time to cleanse.",
+    },
+    {
+      q: "What permissions does Lumina need?",
+      a: "Photo Library (optional, for crystal photos) and Notifications (optional, for daily reminders). Chart and collection data stay on-device and are not uploaded automatically.",
+    },
+    {
+      q: "What languages are supported?",
+      a: "Traditional Chinese and English. Switch anytime in Settings.",
+    },
+    {
+      q: "How do I get support?",
+      a: "Email info@ange1a.com. Product site: https://ange1a.com/lumina/",
+    },
+  ],
+};
