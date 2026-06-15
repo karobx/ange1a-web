@@ -11,9 +11,13 @@ export const metadata: Metadata = {
     default: "Ange1a",
     template: "%s · Ange1a",
   },
+  icons: {
+    icon: "/assets/ange1a-logo.png",
+  },
   openGraph: {
     siteName: "Ange1a",
     type: "website",
+    images: [{ url: "/assets/ange1a-logo.png", width: 300, height: 89, alt: "Ange1a" }],
   },
 };
 

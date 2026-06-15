@@ -21,7 +21,7 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: "Ange1a",
     url: "https://ange1a.com",
-    logo: "https://ange1a.com/assets/logo.png",
+    logo: "https://ange1a.com/assets/ange1a-logo.png",
   };
 }
 

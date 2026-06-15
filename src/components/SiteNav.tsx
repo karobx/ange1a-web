@@ -75,12 +75,17 @@ export function SiteNav() {
       >
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold tracking-tight text-text-primary transition-opacity hover:opacity-80"
+          className="inline-flex items-center transition-opacity hover:opacity-80"
+          aria-label="Ange1a"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-full border border-glass-border bg-surface text-[11px] text-accent">
-            A
-          </span>
-          <span>Ange1a</span>
+          <Image
+            src="/assets/ange1a-logo.png"
+            alt="Ange1a"
+            width={300}
+            height={89}
+            className="h-7 w-auto rounded-md"
+            priority
+          />
         </Link>
         <div className="flex items-center gap-3 text-sm text-text-secondary sm:gap-5">
           <div className="relative group/products">
