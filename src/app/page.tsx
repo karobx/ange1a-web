@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ProductBento } from "@/components/ProductBento";
 import { Reveal } from "@/components/Reveal";
@@ -27,14 +26,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="max-w-4xl">
-              <Image
-                src="/assets/ange1a-logo.png"
-                alt="Ange1a"
-                width={300}
-                height={89}
-                className="h-8 w-auto rounded-md"
-                priority
-              />
+              <p className="text-sm font-medium text-accent">Ange1a</p>
               <h1 className="font-display mt-6 max-w-3xl text-[2.75rem] font-semibold leading-[1.05] tracking-[-0.03em] text-text-primary md:text-6xl lg:text-[4.8rem]">
                 為創作者設計安靜而有力的工具。
               </h1>
