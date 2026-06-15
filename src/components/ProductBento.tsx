@@ -24,8 +24,14 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
     ? "拍照、語音備忘同自動定位，把截圖變成可搜尋的記憶。"
     : "Photo, voice memo, and auto location turn screenshots into searchable memories.";
 
+  const jiyiTitle = isZh ? "記一筆" : "記一筆 / Jiyi";
+  const jiyiDesc = isZh ? "iOS 分帳 app" : "iOS expense-splitting app";
+  const jiyiSub = isZh
+    ? "朋友聚會、旅行分帳，最少轉賬筆數一次結清。"
+    : "Split group bills with the fewest transfers to settle everyone up.";
+
   return (
-    <div className="grid grid-flow-dense grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
+    <div className="grid grid-flow-dense grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-5">
       <motion.div
         initial={reduce ? false : { opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -104,6 +110,45 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
             </div>
           </div>
         </Link>
+      </motion.div>
+
+      <motion.div
+        initial={reduce ? false : { opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <div className="glass-panel flex h-full min-h-[300px] flex-col justify-between rounded-[2rem] p-7 md:p-8">
+          <div>
+            <p className="text-sm font-medium text-text-hint">
+              {isZh ? "即將上線" : "Coming soon"}
+            </p>
+            <div className="mt-4 flex items-start gap-5 md:gap-6">
+              <div className="min-w-0 flex-1">
+                <h2 className="text-[1.8rem] font-semibold tracking-tight text-text-primary md:text-[2.25rem]">
+                  {jiyiTitle}
+                </h2>
+                <p className="mt-1 text-sm font-medium text-accent">{jiyiDesc}</p>
+                <p className="mt-4 text-base leading-relaxed text-text-secondary">
+                  {jiyiSub}
+                </p>
+              </div>
+              <Image
+                src="/assets/jiyi-logo.png"
+                alt="記一筆"
+                width={124}
+                height={124}
+                className="h-[105px] w-[105px] shrink-0 rounded-[1.1rem] md:h-[123px] md:w-[123px]"
+              />
+            </div>
+          </div>
+          <div className="mt-10 flex items-center justify-between gap-4 border-t border-glass-border pt-5">
+            <span className="text-sm text-text-secondary">iOS</span>
+            <span className="inline-flex items-center rounded-full border border-glass-border bg-surface px-3 py-1 text-xs font-medium text-text-secondary">
+              {isZh ? "即將上線" : "Coming soon"}
+            </span>
+          </div>
+        </div>
       </motion.div>
     </div>
   );

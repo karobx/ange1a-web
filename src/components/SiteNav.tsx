@@ -46,6 +46,18 @@ function productItems(locale: Locale) {
       logoAlt: "MemoryShot",
       accent: true,
     },
+    {
+      href: null,
+      title: isZh ? "記一筆" : "記一筆 / Jiyi",
+      desc: isZh
+        ? "朋友聚會、旅行分帳，最少轉賬筆數一次結清。"
+        : "Split group bills with the fewest transfers to settle everyone up.",
+      platform: isZh ? "iOS · 即將上線" : "iOS · Coming soon",
+      logo: "/assets/jiyi-logo.png",
+      logoAlt: "記一筆",
+      accent: false,
+      comingSoon: true,
+    },
   ] as const;
 }
 
@@ -87,40 +99,53 @@ export function SiteNav() {
             </span>
             <div className="pointer-events-none absolute left-1/2 top-full z-50 hidden w-[min(calc(100vw-2rem),22rem)] -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover/products:pointer-events-auto group-hover/products:opacity-100 sm:block">
               <div className="overflow-hidden rounded-2xl border border-glass-border bg-background/95 p-2 shadow-[0_18px_50px_var(--shadow-deep)] backdrop-blur-2xl">
-                {products.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`group/item flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-accent-muted ${
-                      item.accent ? "hover:bg-accent/10" : ""
-                    }`}
-                  >
-                    <Image
-                      src={item.logo}
-                      alt={item.logoAlt}
-                      width={48}
-                      height={48}
-                      className="h-12 w-12 shrink-0 rounded-[0.85rem]"
-                    />
-                    <div className="min-w-0">
-                      <p
-                        className={`font-medium text-text-primary transition-colors group-hover/item:text-text-primary ${
-                          item.accent
-                            ? "group-hover/item:text-accent"
-                            : "group-hover/item:text-accent"
-                        }`}
+                {products.map((item) => {
+                  const inner = (
+                    <>
+                      <Image
+                        src={item.logo}
+                        alt={item.logoAlt}
+                        width={48}
+                        height={48}
+                        className="h-12 w-12 shrink-0 rounded-[0.85rem]"
+                      />
+                      <div className="min-w-0">
+                        <p className="font-medium text-text-primary transition-colors group-hover/item:text-text-primary group-hover/item:text-accent">
+                          {item.title}
+                        </p>
+                        <p className="mt-1 text-xs leading-relaxed text-text-secondary">
+                          {item.desc}
+                        </p>
+                        <p className="mt-2 text-[11px] text-text-hint">
+                          {item.platform}
+                        </p>
+                      </div>
+                    </>
+                  );
+
+                  if ("comingSoon" in item && item.comingSoon) {
+                    return (
+                      <div
+                        key={item.title}
+                        className="flex items-start gap-3 rounded-xl p-3 opacity-80"
                       >
-                        {item.title}
-                      </p>
-                      <p className="mt-1 text-xs leading-relaxed text-text-secondary">
-                        {item.desc}
-                      </p>
-                      <p className="mt-2 text-[11px] text-text-hint">
-                        {item.platform}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
+                        {inner}
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href!}
+                      className={`group/item flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-accent-muted ${
+                        item.accent ? "hover:bg-accent/10" : ""
+                      }`}
+                    >
+                      {inner}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>

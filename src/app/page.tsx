@@ -67,7 +67,7 @@ export default function HomePage() {
 
       <section className="px-4 pb-20 pt-12 md:pb-28 md:pt-20">
         <Reveal>
-          <div className="mx-auto grid max-w-5xl gap-4 px-4 md:grid-cols-2 md:gap-5 md:px-5">
+          <div className="mx-auto grid max-w-5xl gap-4 px-4 md:grid-cols-2 lg:grid-cols-3 md:gap-5 md:px-5">
             <div className="glass-panel rounded-[2rem] p-7 transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:-translate-y-1 hover:border-accent/30 md:p-9">
               <p className="text-xs font-medium uppercase tracking-widest text-accent">
                 Sparks
@@ -107,6 +107,20 @@ export default function HomePage() {
                   ↗
                 </span>
               </Link>
+            </div>
+            <div className="glass-panel rounded-[2rem] p-7 transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:p-9">
+              <p className="text-xs font-medium uppercase tracking-widest text-text-hint">
+                記一筆 · 即將上線
+              </p>
+              <h2 className="font-display mt-3 text-[1.9rem] font-semibold tracking-tight text-text-primary md:text-[2.35rem]">
+                聚會分帳，一筆記清楚。
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-text-secondary">
+                朋友聚會、旅行分帳，最少轉賬筆數一次結清。
+              </p>
+              <span className="mt-8 inline-flex items-center rounded-full border border-glass-border bg-surface px-5 py-3 text-sm font-medium text-text-secondary">
+                即將上線
+              </span>
             </div>
           </div>
         </Reveal>

@@ -10,7 +10,7 @@ export const copy = {
     "zh-Hant": {
       title: "Ange1a",
       description:
-        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶。",
+        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，記一筆即將推出多人分帳 app。",
       heroTitle: "創意工具，",
       heroTitleAccent: "為執行而生",
       heroSub:
@@ -19,7 +19,7 @@ export const copy = {
     en: {
       title: "Ange1a",
       description:
-        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories.",
+        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. 記一筆 group expense splitting is coming soon.",
       heroTitle: "Creative tools",
       heroTitleAccent: "built to ship",
       heroSub:
@@ -342,6 +342,7 @@ export const copy = {
       products: "產品",
       sparks: "Sparks",
       memoryshot: "MemoryShot",
+      jiyi: "記一筆",
       support: "支援",
       privacy: "私隱",
     },
@@ -349,6 +350,7 @@ export const copy = {
       products: "Products",
       sparks: "Sparks",
       memoryshot: "MemoryShot",
+      jiyi: "記一筆",
       support: "Support",
       privacy: "Privacy",
     },
@@ -405,7 +407,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "Ange1a 仲有咩其他產品？",
-      a: "除 Sparks 外，MemoryShot 已上線（iOS）。詳見 ange1a.com/memoryshot/。",
+      a: "除 Sparks 同 MemoryShot 外，記一筆（iOS 多人分帳）即將上線。",
     },
   ],
   en: [
@@ -447,7 +449,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "What else does Ange1a make?",
-      a: "MemoryShot is available on iOS, alongside Sparks. Visit ange1a.com/memoryshot/.",
+      a: "Alongside Sparks and MemoryShot, 記一筆 (iOS group expense splitting) is coming soon.",
     },
   ],
 };
