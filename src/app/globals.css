@@ -160,7 +160,7 @@ body::after {
   display: flex;
   min-height: 300px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: hidden;
   border-radius: 2rem;
   border: 1px solid var(--glass-border);
@@ -180,6 +180,25 @@ body::after {
   .product-card {
     padding: 2rem;
   }
+}
+
+.product-card-header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.5rem;
+  padding-right: 0;
+}
+
+.product-card-body {
+  flex: 1 1 auto;
+  padding-right: 0.25rem;
+}
+
+.product-card-footer {
+  margin-top: 2.5rem;
 }
 
 .product-card::after {
@@ -223,20 +242,35 @@ body::after {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
-  transition: transform 500ms cubic-bezier(0.32, 0.72, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem;
+  border-radius: 1.125rem;
+  border: 1px solid var(--glass-border);
+  background: var(--surface-elevated);
+  box-shadow:
+    0 1px 0 var(--glass-highlight) inset,
+    0 8px 20px var(--shadow-tint);
+  transition:
+    transform 500ms cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 400ms ease;
 }
 
 .group:hover .product-card-logo-wrap {
-  transform: scale(1.06) rotate(-2deg);
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow:
+    0 1px 0 var(--glass-highlight) inset,
+    0 12px 28px var(--shadow-deep);
 }
 
 .product-card-logo {
-  box-shadow: 0 10px 24px var(--shadow-tint);
-  transition: box-shadow 400ms ease;
+  display: block;
+  border-radius: 0.85rem;
 }
 
 .group:hover .product-card-logo {
-  box-shadow: 0 16px 32px var(--shadow-deep);
+  box-shadow: none;
 }
 
 .product-card-cta {

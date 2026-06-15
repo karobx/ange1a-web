@@ -29,35 +29,33 @@ function ProductCardFace({ item, isZh }: { item: ProductItem; isZh: boolean }) {
   return (
     <Card
       variant="transparent"
-      className={`product-card ${item.comingSoon ? "product-card--static" : "product-card--interactive"} !gap-0 !p-0 !shadow-none`}
+      className={`product-card ${item.comingSoon ? "product-card--static" : "product-card--interactive"} !gap-0 !shadow-none`}
     >
-      <Card.Header className="!gap-0 !p-0">
-        <div className="flex items-start justify-between gap-4">
-          <Chip
-            variant="soft"
-            color={item.eyebrowTone === "accent" ? "accent" : "default"}
-            size="sm"
-            className={
-              item.eyebrowTone === "muted"
-                ? "inline-flex !rounded-full !border !border-glass-border !bg-[rgba(51,43,33,0.04)] !px-2.5 !py-0.5 !text-xs !font-medium !text-text-hint"
-                : "inline-flex !rounded-full !bg-accent-muted !px-2.5 !py-0.5 !text-xs !font-medium !text-accent"
-            }
-          >
-            {item.eyebrow}
-          </Chip>
-          <div className="product-card-logo-wrap">
-            <Image
-              src={item.logoSrc}
-              alt={item.logoAlt}
-              width={72}
-              height={72}
-              className="product-card-logo h-14 w-14 rounded-[0.95rem] md:h-16 md:w-16"
-            />
-          </div>
+      <Card.Header className="product-card-header !gap-0 !p-0">
+        <Chip
+          variant="soft"
+          color={item.eyebrowTone === "accent" ? "accent" : "default"}
+          size="sm"
+          className={
+            item.eyebrowTone === "muted"
+              ? "inline-flex !rounded-full !border !border-glass-border !bg-[rgba(51,43,33,0.04)] !px-2.5 !py-0.5 !text-xs !font-medium !text-text-hint"
+              : "inline-flex !rounded-full !bg-accent-muted !px-2.5 !py-0.5 !text-xs !font-medium !text-accent"
+          }
+        >
+          {item.eyebrow}
+        </Chip>
+        <div className="product-card-logo-wrap" aria-hidden={false}>
+          <Image
+            src={item.logoSrc}
+            alt={item.logoAlt}
+            width={64}
+            height={64}
+            className="product-card-logo h-12 w-12 md:h-14 md:w-14"
+          />
         </div>
       </Card.Header>
 
-      <Card.Content className="!mt-4 !gap-0 !p-0">
+      <Card.Content className="product-card-body !mt-5 !gap-0 !p-0">
         <h2 className="text-balance text-[1.65rem] font-semibold leading-[1.12] tracking-tight text-text-primary md:text-[1.85rem] lg:text-[1.7rem] xl:text-[2rem]">
           {item.title}
         </h2>
@@ -69,7 +67,7 @@ function ProductCardFace({ item, isZh }: { item: ProductItem; isZh: boolean }) {
         </Card.Description>
       </Card.Content>
 
-      <Card.Footer className="!mt-10 !justify-between !gap-4 !border-t !border-glass-border !p-0 !pt-5">
+      <Card.Footer className="product-card-footer !mt-auto !justify-between !gap-4 !border-t !border-glass-border !p-0 !pt-5">
         <Chip
           variant="tertiary"
           size="sm"
