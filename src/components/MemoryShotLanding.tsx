@@ -202,50 +202,104 @@ export function MemoryShotLanding({ locale }: { locale: Locale }) {
         className="border-t border-[rgba(51,43,33,0.08)] px-4 py-20 md:py-28"
       >
         <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <div className="glass-panel-elevated overflow-hidden rounded-[1.75rem] p-8 md:grid md:grid-cols-[minmax(0,1fr)_auto] md:items-center md:gap-10 lg:gap-14 md:p-10">
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#b58a3d]">
-                  {c.cleanupEyebrow}
-                </p>
-                <h2 className="font-display mt-4 text-3xl font-semibold tracking-[-0.02em] text-[#332b21]">
-                  {c.cleanupTitle}
-                </h2>
-                <p className="mt-5 max-w-lg text-base leading-[1.75] text-[#756b5a]">
-                  {c.cleanupBody}
-                </p>
-                <ul className="mt-7 space-y-3">
-                  {c.cleanupFeatures.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 text-sm leading-relaxed text-[#756b5a]"
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.08fr)_minmax(220px,272px)] lg:items-start lg:gap-12 xl:gap-16">
+            <div className="flex flex-col gap-8">
+              <Reveal>
+                <div className="max-w-xl">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#b58a3d]">
+                    {c.cleanupEyebrow}
+                  </p>
+                  <h2 className="font-display mt-4 text-balance text-3xl font-semibold tracking-[-0.02em] text-[#332b21] md:text-[2.6rem] md:leading-[1.08]">
+                    {c.cleanupTitle}
+                  </h2>
+                  <p className="mt-5 max-w-lg text-pretty text-base leading-[1.75] text-[#756b5a]">
+                    {c.cleanupBody}
+                  </p>
+                </div>
+              </Reveal>
+
+              <div className="grid gap-3 sm:grid-cols-3">
+                {c.cleanupFeatures.map((item, i) => (
+                  <Reveal key={item} delay={0.04 + i * 0.05}>
+                    <div className="glass-panel h-full rounded-xl p-4 md:rounded-2xl md:p-5">
+                      <p className="font-mono text-[10px] font-medium tabular-nums tracking-[0.12em] text-[#b58a3d]">
+                        {String(i + 1).padStart(2, "0")}
+                      </p>
+                      <p className="mt-2.5 text-[13px] leading-[1.65] text-[#756b5a]">
+                        {item}
+                      </p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+
+              <Reveal delay={0.18}>
+                <div
+                  className="flex flex-wrap gap-2"
+                  aria-label={
+                    locale === "zh-Hant" ? "清理手勢" : "Cleanup gestures"
+                  }
+                >
+                  {(
+                    locale === "zh-Hant"
+                      ? [
+                          { symbol: "←", label: "移入垃圾桶", tone: "text-[#c45c5c]" },
+                          { symbol: "→", label: "暫留相簿", tone: "text-[#5a8f6e]" },
+                          { symbol: "♥", label: "加入收藏", tone: "text-[#c45c7a]" },
+                        ]
+                      : [
+                          { symbol: "←", label: "To trash", tone: "text-[#c45c5c]" },
+                          { symbol: "→", label: "Keep", tone: "text-[#5a8f6e]" },
+                          { symbol: "♥", label: "Favorite", tone: "text-[#c45c7a]" },
+                        ]
+                  ).map((gesture) => (
+                    <span
+                      key={gesture.label}
+                      className="inline-flex items-center gap-2 rounded-full border border-[rgba(51,43,33,0.1)] bg-white/55 px-3 py-1.5 text-xs font-medium text-[#332b21] shadow-[0_6px_18px_rgba(51,43,33,0.06)] backdrop-blur-sm"
                     >
                       <span
                         aria-hidden
-                        className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#b58a3d]"
-                      />
-                      {item}
-                    </li>
+                        className={`text-sm leading-none ${gesture.tone}`}
+                      >
+                        {gesture.symbol}
+                      </span>
+                      {gesture.label}
+                    </span>
                   ))}
-                </ul>
-              </div>
-              <div className="mt-8 flex justify-center md:mt-0 md:justify-end">
-                <div className="w-full max-w-[200px] sm:max-w-[220px] rounded-[1.5rem] bg-[#b58a3d]/[0.06] p-2 ring-1 ring-[#b58a3d]/15">
-                  <Image
-                    src="/assets/memoryshot-cleanup.png"
-                    alt={
-                      locale === "zh-Hant"
-                        ? "MemoryShot 清理介面預覽"
-                        : "MemoryShot cleanup interface preview"
-                    }
-                    width={390}
-                    height={844}
-                    className="w-full rounded-[1.25rem]"
-                  />
                 </div>
-              </div>
+              </Reveal>
             </div>
-          </Reveal>
+
+            <Reveal delay={0.1} className="relative mx-auto w-full max-w-[248px] lg:mx-0 lg:justify-self-end">
+              <div
+                aria-hidden
+                className="pointer-events-none absolute -inset-5 -z-10 rounded-[2.75rem] bg-[radial-gradient(ellipse_at_30%_20%,rgba(181,138,61,0.16),transparent_58%),radial-gradient(ellipse_at_80%_80%,rgba(241,236,228,0.95),transparent_50%)]"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute -right-1 top-[18%] z-20 rounded-full border border-[rgba(51,43,33,0.08)] bg-white/90 px-2.5 py-1 text-[10px] font-medium tracking-wide text-[#756b5a] shadow-[0_8px_20px_rgba(51,43,33,0.08)] backdrop-blur-sm"
+              >
+                PhotoKit
+              </div>
+              <div className="glass-panel relative overflow-hidden rounded-[1.75rem] p-2 shadow-[0_20px_48px_rgba(51,43,33,0.12)] transition duration-500 hover:shadow-[0_28px_56px_rgba(51,43,33,0.16)]">
+                <Image
+                  src="/assets/memoryshot-cleanup.png"
+                  alt={
+                    locale === "zh-Hant"
+                      ? "MemoryShot 清理介面預覽"
+                      : "MemoryShot cleanup interface preview"
+                  }
+                  width={390}
+                  height={844}
+                  sizes="(max-width: 1024px) 248px, 272px"
+                  className="w-full rounded-[1.35rem]"
+                />
+              </div>
+              <p className="mt-4 text-center text-[11px] font-medium tracking-[0.08em] text-[#a39684] uppercase">
+                {locale === "zh-Hant" ? "零 Token · 本機處理" : "Zero tokens · on-device"}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
 
