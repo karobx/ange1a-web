@@ -848,6 +848,78 @@ export const memoryshotPrivacySections: Record<
   },
 };
 
+export const luminaPrivacySections: Record<
+  Locale,
+  { title: string; sections: { heading: string; body: string }[] }
+> = {
+  "zh-Hant": {
+    title: "私隱政策",
+    sections: [
+      {
+        heading: "概述",
+        body: "Ange1a 開發晶靈 Lumina。本政策說明 iOS app 如何處理你嘅資料。",
+      },
+      {
+        heading: "我哋收集咩資料",
+        body: "你建立嘅命盤資料（姓名、出生日期、時辰、出生地）、水晶收藏（相片、暱稱、備註、淨化紀錄）、每日推薦同使用紀錄，預設全部儲存喺裝置本地（SwiftData），唔會自動上傳到我哋伺服器。晶靈 Lumina 唔需要帳戶登入，亦唔收集廣告識別碼。",
+      },
+      {
+        heading: "本機運算",
+        body: "八字命盤計算、五行分析同每日水晶推薦皆在你裝置本機完成，離線亦可正常使用，唔需要網絡連線。",
+      },
+      {
+        heading: "裝置權限",
+        body: "晶靈 Lumina 可能請求相簿（為水晶附加相片，可選）同通知（每日提醒或淨化提醒，可選）。你可以喺 iOS 設定或 app 內設定隨時關閉通知。",
+      },
+      {
+        heading: "資料刪除",
+        body: "刪除 app 會一併移除裝置上嘅命盤、收藏同紀錄。我哋無法代你還原已刪除嘅本機資料。",
+      },
+      {
+        heading: "我哋唔會做嘅事",
+        body: "我哋唔會出售你嘅命盤或水晶收藏資料，亦唔會用你嘅資料做廣告定向（除非將來明確告知並取得同意）。",
+      },
+      {
+        heading: "聯絡",
+        body: "如有私隱問題，請聯絡 info@ange1a.com。生效日期：2026-06-16。",
+      },
+    ],
+  },
+  en: {
+    title: "Privacy Policy",
+    sections: [
+      {
+        heading: "Overview",
+        body: "Ange1a develops Lumina (晶靈). This policy describes how the iOS app handles your information.",
+      },
+      {
+        heading: "What we collect",
+        body: "Bazi profiles you create (name, birth date, time, place), crystal collections (photos, nicknames, notes, cleansing records), daily recommendations, and usage logs are stored locally on your device (SwiftData) by default and are not uploaded to our servers. Lumina does not require account sign-in and does not collect advertising identifiers.",
+      },
+      {
+        heading: "On-device processing",
+        body: "Bazi chart calculations, element analysis, and daily crystal recommendations all run on your device. The app works offline and does not require a network connection.",
+      },
+      {
+        heading: "Device permissions",
+        body: "Lumina may request Photo Library (optional, to attach crystal photos) and Notifications (optional, for daily or cleansing reminders). You can disable notifications anytime in iOS Settings or in the app.",
+      },
+      {
+        heading: "Data deletion",
+        body: "Deleting the app removes charts, collections, and logs from your device. We cannot restore locally deleted data on your behalf.",
+      },
+      {
+        heading: "What we do not do",
+        body: "We do not sell your chart or crystal collection data, or use your information for ad targeting unless explicitly disclosed and consented.",
+      },
+      {
+        heading: "Contact",
+        body: "For privacy questions, contact info@ange1a.com. Effective date: 2026-06-16.",
+      },
+    ],
+  },
+};
+
 export function localeFromParam(param: string): Locale | null {
   if (param === "zh-Hant" || param === "en") return param;
   return null;
@@ -877,7 +949,7 @@ export const luminaFaqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "晶靈 Lumina 需要咩權限？",
-      a: "相簿（為水晶附加相片，可選）、通知（每日提醒，可選）。命盤同收藏資料儲存喺本機，唔會自動上傳。",
+      a: "相簿（為水晶附加相片，可選）、通知（每日提醒，可選）。命盤同收藏資料儲存喺本機，唔會自動上傳。詳見私隱政策。",
     },
     {
       q: "支援邊啲語言？",
@@ -911,7 +983,7 @@ export const luminaFaqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "What permissions does Lumina need?",
-      a: "Photo Library (optional, for crystal photos) and Notifications (optional, for daily reminders). Chart and collection data stay on-device and are not uploaded automatically.",
+      a: "Photo Library (optional, for crystal photos) and Notifications (optional, for daily reminders). Chart and collection data stay on-device and are not uploaded automatically. See the Privacy Policy.",
     },
     {
       q: "What languages are supported?",

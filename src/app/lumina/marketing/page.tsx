@@ -78,6 +78,12 @@ export default function LuminaMarketingPage() {
                 </td>
               </tr>
               <tr>
+                <th>私隱政策</th>
+                <td>
+                  <Link href="/lumina/privacy/">ange1a.com/lumina/privacy/</Link>
+                </td>
+              </tr>
+              <tr>
                 <th>產品官網</th>
                 <td>
                   <Link href="/lumina/">ange1a.com/lumina/</Link>
@@ -121,6 +127,12 @@ export default function LuminaMarketingPage() {
                 <th>Support</th>
                 <td>
                   <Link href="/lumina/support/">ange1a.com/lumina/support/</Link>
+                </td>
+              </tr>
+              <tr>
+                <th>Privacy Policy</th>
+                <td>
+                  <Link href="/lumina/privacy/">ange1a.com/lumina/privacy/</Link>
                 </td>
               </tr>
               <tr>

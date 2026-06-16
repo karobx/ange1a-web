@@ -356,6 +356,16 @@ export function LuminaLanding({ locale }: { locale: Locale }) {
             >
               {c.ctaMarketing}
             </Link>
+            <Link
+              href="/lumina/privacy/"
+              className="inline-flex rounded-full border bg-white/50 px-5 py-2.5 text-sm font-medium transition duration-300 active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              style={{
+                color: muted,
+                borderColor: border,
+              }}
+            >
+              {locale === "zh-Hant" ? "私隱政策" : "Privacy Policy"}
+            </Link>
           </div>
         </Reveal>
       </section>
