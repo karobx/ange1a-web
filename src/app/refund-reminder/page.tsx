@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       {
         url: "/assets/refund-reminder-logo.png",
         width: 1024,
-        height: 1024,
+        height: 966,
         alt: "Refund Reminder app icon",
       },
     ],
