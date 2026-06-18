@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "HER-OS Terms of Service",
-  description: "Terms of service for HER-OS.",
+  title: "HER-OS Terms and Conditions",
+  description: "Terms and conditions for HER-OS.",
   alternates: {
     canonical: "https://ange1a.com/her-os/terms/",
   },
@@ -16,7 +16,7 @@ export default function HerOsTermsPage() {
         HER-OS
       </p>
       <h1 className="text-3xl font-semibold tracking-tight text-text-primary">
-        Terms of Service
+        Terms and Conditions
       </h1>
       <p className="mt-3 text-sm text-text-secondary">
         Effective date: June 18, 2026 ·{" "}

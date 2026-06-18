@@ -32,6 +32,12 @@ export default function HerOsLandingPage() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
+            href="/her-os/marketing/"
+            className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-background transition hover:bg-text-primary"
+          >
+            Marketing
+          </Link>
+          <Link
             href="/her-os/support/"
             className="rounded-full bg-text-primary px-5 py-3 text-sm font-semibold text-background transition hover:bg-accent"
           >
@@ -42,6 +48,12 @@ export default function HerOsLandingPage() {
             className="rounded-full border border-glass-border bg-surface px-5 py-3 text-sm font-semibold text-text-primary transition hover:border-accent/40 hover:text-accent"
           >
             Privacy Policy
+          </Link>
+          <Link
+            href="/her-os/terms/"
+            className="rounded-full border border-glass-border bg-surface px-5 py-3 text-sm font-semibold text-text-primary transition hover:border-accent/40 hover:text-accent"
+          >
+            Terms and Conditions
           </Link>
         </div>
       </div>
