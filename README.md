@@ -33,18 +33,32 @@ npm install
 npm run build
 ```
 
-Output is written to `web/out/` for GitHub Pages deployment.
+Output is written to `web/out/` for Cloudflare Pages deployment.
 
 ## Deployment
 
-Push to `main` triggers [`.github/workflows/deploy-ange1a.yml`](../.github/workflows/deploy-ange1a.yml).
+This repo deploys to Cloudflare Pages using GitHub integration.
 
-**GoDaddy DNS (manual):**
+### Cloudflare Pages
 
-1. GitHub repo → Settings → Pages → Source: GitHub Actions
-2. Add custom domain `ange1a.com` (CNAME file is in `public/CNAME`)
-3. GoDaddy A records → GitHub Pages IPs; `www` CNAME → `ange1a.com`
-4. Submit `https://ange1a.com/sitemap.xml` in Google Search Console
+1. In Cloudflare, create a new Pages project and connect this GitHub repository.
+2. Use build command `npm run build`.
+3. Use output directory `out`.
+4. Set the production branch to `main`.
+5. Set the Node.js version to `22` in the Pages build environment.
+6. Add custom domains `ange1a.com` and `www.ange1a.com`.
+7. Redirect `www.ange1a.com` to `https://ange1a.com`.
+
+### DNS and Email
+
+1. Move the domain nameservers at GoDaddy to the Cloudflare nameservers assigned to `ange1a.com`.
+2. Manage all DNS records in Cloudflare after the nameserver cutover.
+3. Enable Cloudflare Email Routing for `ange1a.com`.
+4. Verify the destination inbox and create the forwarding rule `info@ange1a.com` to your preferred mailbox.
+
+### GitHub Actions
+
+Pushes to `main` and pull requests run [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) as a build verification check only. Production deployment is handled by Cloudflare Pages, not GitHub Pages.
 
 ## Canonical copy
 
