@@ -32,6 +32,9 @@ export function SiteFooter() {
           <Link href="/lumina/" className="hover:text-text-primary">
             {nav.lumina}
           </Link>
+          <Link href="/refund-reminder/" className="hover:text-text-primary">
+            {nav.refundReminder}
+          </Link>
           <span className="text-text-hint">{nav.jiyi} · {locale === "zh-Hant" ? "即將上線" : "Coming soon"}</span>
         </div>
       </div>

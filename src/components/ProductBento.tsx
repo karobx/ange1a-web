@@ -169,6 +169,20 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
       ctaLabel: isZh ? "了解 Lumina" : "Explore Lumina",
     },
     {
+      id: "refund-reminder",
+      href: "/refund-reminder/",
+      eyebrow: isZh ? "iOS 退貨提醒" : "iOS return tracker",
+      eyebrowTone: "accent",
+      title: "Refund Reminder",
+      description: isZh
+        ? "追蹤退貨期限、收據截圖同提醒，喺窗口關閉前收到通知。"
+        : "Track return windows, receipt photos, and reminders before deadlines close.",
+      logoSrc: "/assets/refund-reminder-logo.png",
+      logoAlt: "Refund Reminder",
+      platform: "iOS",
+      ctaLabel: isZh ? "了解 Refund Reminder" : "Explore Refund Reminder",
+    },
+    {
       id: "jiyi",
       eyebrow: isZh ? "即將上線" : "Coming soon",
       eyebrowTone: "muted",

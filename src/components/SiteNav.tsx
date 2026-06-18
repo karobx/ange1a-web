@@ -61,6 +61,17 @@ function productItems(locale: Locale) {
       accent: false,
     },
     {
+      href: "/refund-reminder/",
+      title: "Refund Reminder",
+      desc: isZh
+        ? "追蹤退貨期限、收據截圖同提醒，喺窗口關閉前收到通知。"
+        : "Track return windows, receipt photos, and reminders before deadlines close.",
+      platform: "iOS",
+      logo: "/assets/refund-reminder-logo.png",
+      logoAlt: "Refund Reminder",
+      accent: true,
+    },
+    {
       href: null,
       title: isZh ? "記一筆" : "記一筆 / Jiyi",
       desc: isZh

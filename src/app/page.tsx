@@ -128,6 +128,26 @@ export default function HomePage() {
                 </span>
               </Link>
             </div>
+            <div className="glass-panel rounded-[2rem] p-7 transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:-translate-y-1 hover:border-accent/30 md:p-9">
+              <p className="text-xs font-medium uppercase tracking-widest text-accent">
+                Refund Reminder
+              </p>
+              <h2 className="font-display mt-3 text-[1.9rem] font-semibold tracking-tight text-text-primary md:text-[2.35rem]">
+                退貨期限，唔好再錯過。
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-text-secondary">
+                追蹤退貨期限、收據截圖同提醒，喺窗口關閉前收到通知。
+              </p>
+              <Link
+                href="/refund-reminder/"
+                className="group mt-8 inline-flex items-center gap-3 rounded-full border border-glass-border bg-surface px-5 py-3 text-sm font-semibold text-text-primary transition duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:border-accent/40 hover:text-accent active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+              >
+                了解 Refund Reminder
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent-muted text-xs transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-px">
+                  ↗
+                </span>
+              </Link>
+            </div>
             <div className="glass-panel rounded-[2rem] p-7 transition duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] md:p-9">
               <p className="text-xs font-medium uppercase tracking-widest text-text-hint">
                 記一筆 · 即將上線
