@@ -110,6 +110,33 @@ export function luminaApplicationJsonLd(locale: "zh-Hant" | "en") {
   };
 }
 
+export function neardropApplicationJsonLd(locale: "zh-Hant" | "en") {
+  const c = locale === "zh-Hant"
+    ? {
+        name: "NearDrop",
+        description:
+          "iPhone 離線快速傳檔：個人熱點 + QR Code，Android、Windows、Mac 瀏覽器即可收檔，檔案不經雲端。",
+      }
+    : {
+        name: "NearDrop",
+        description:
+          "Fast offline file transfer for iPhone via Personal Hotspot and QR code. Browser upload on Android, Windows, and Mac.",
+      };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: c.name,
+    description: c.description,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "iOS",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    author: { "@type": "Organization", name: "Ange1a" },
+    url: "https://ange1a.com/neardrop/",
+    image: "https://ange1a.com/assets/neardrop-logo.png",
+  };
+}
+
 export function angelaProjectJsonLd(locale: "zh-Hant" | "en") {
   const isZh = locale === "zh-Hant";
 

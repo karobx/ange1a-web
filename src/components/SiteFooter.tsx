@@ -35,6 +35,9 @@ export function SiteFooter() {
           <Link href="/refund-reminder/" className="hover:text-text-primary">
             {nav.refundReminder}
           </Link>
+          <Link href="/neardrop/" className="hover:text-text-primary">
+            {nav.neardrop}
+          </Link>
           <span className="text-text-hint">{nav.jiyi} · {locale === "zh-Hant" ? "即將上線" : "Coming soon"}</span>
         </div>
       </div>

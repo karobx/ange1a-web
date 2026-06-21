@@ -72,6 +72,17 @@ function productItems(locale: Locale) {
       accent: true,
     },
     {
+      href: "/neardrop/",
+      title: "NearDrop",
+      desc: isZh
+        ? "開啟個人熱點，掃 QR 即連 — Android、Windows、Mac 瀏覽器即可收檔，檔案不經雲端。"
+        : "Personal Hotspot + QR code. Browser upload on Android, Windows, and Mac — no cloud.",
+      platform: isZh ? "iOS · 即將上線" : "iOS · Coming soon",
+      logo: "/assets/neardrop-logo.png",
+      logoAlt: "NearDrop",
+      accent: false,
+    },
+    {
       href: null,
       title: isZh ? "記一筆" : "記一筆 / Jiyi",
       desc: isZh

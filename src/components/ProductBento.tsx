@@ -183,6 +183,22 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
       ctaLabel: isZh ? "了解 Refund Reminder" : "Explore Refund Reminder",
     },
     {
+      id: "neardrop",
+      href: "/neardrop/",
+      eyebrow: isZh ? "即將上線" : "Coming soon",
+      eyebrowTone: "muted",
+      title: "NearDrop",
+      subtitle: isZh ? "iOS 離線傳檔" : "Offline iOS file transfer",
+      description: isZh
+        ? "開啟個人熱點，掃 QR 即連 — Android、Windows、Mac 瀏覽器即可收檔，檔案不經雲端。"
+        : "Personal Hotspot + QR code. Browser upload on Android, Windows, and Mac — no cloud.",
+      logoSrc: "/assets/neardrop-logo.png",
+      logoAlt: "NearDrop",
+      platform: "iOS",
+      ctaLabel: isZh ? "了解 NearDrop" : "Explore NearDrop",
+      comingSoon: true,
+    },
+    {
       id: "jiyi",
       eyebrow: isZh ? "即將上線" : "Coming soon",
       eyebrowTone: "muted",

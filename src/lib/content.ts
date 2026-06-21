@@ -11,7 +11,7 @@ export const copy = {
     "zh-Hant": {
       title: "Ange1a",
       description:
-        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，晶靈 Lumina 結合八字命盤與水晶指引，記一筆即將推出多人分帳 app。",
+        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，晶靈 Lumina 結合八字命盤與水晶指引，NearDrop 離線快速傳檔，記一筆即將推出多人分帳 app。",
       heroTitle: "創意工具，",
       heroTitleAccent: "為執行而生",
       heroSub:
@@ -20,7 +20,7 @@ export const copy = {
     en: {
       title: "Ange1a",
       description:
-        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. Lumina (晶靈) pairs Bazi charts with daily crystal guidance. 記一筆 group expense splitting is coming soon.",
+        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. Lumina (晶靈) pairs Bazi charts with daily crystal guidance. NearDrop for offline file transfer. 記一筆 group expense splitting is coming soon.",
       heroTitle: "Creative tools",
       heroTitleAccent: "built to ship",
       heroSub:
@@ -530,6 +530,128 @@ export const copy = {
       marketingCategory: "Lifestyle",
     },
   },
+  neardrop: {
+    "zh-Hant": {
+      title: "NearDrop · Ange1a",
+      description:
+        "NearDrop 是 iPhone 離線快速傳檔工具：開啟個人熱點，掃描 QR 即可連線 — Android、Windows、Mac 瀏覽器即可收檔，檔案不經雲端。Ange1a 出品。",
+      eyebrow: "Ange1a · iOS 離線傳檔",
+      heroTitle: "附近傳檔，",
+      heroTitleAccent: "無需網路",
+      heroSub:
+        "開啟個人熱點，掃描 QR 即可連線。iPhone 作為主機，附近裝置透過瀏覽器或 NearDrop App 直接收檔 — 無需網路、檔案不經雲端。",
+      logoAlt: "NearDrop app 圖示",
+      comingSoonLabel: "即將上線",
+      statusNote: "NearDrop 即將在 App Store 上線。",
+      backToHub: "← 返回 Ange1a",
+      sections: [
+        {
+          id: "hero",
+          src: "/assets/neardrop/neardrop-section-01-hero.png",
+          alt: "NearDrop 主視覺：附近傳檔，無需網路 — 開啟個人熱點，掃描 QR 即可連線",
+        },
+        {
+          id: "how-it-works",
+          src: "/assets/neardrop/neardrop-section-02-how-it-works.png",
+          alt: "NearDrop 三步驟：開啟個人熱點、顯示 QR Code、對方掃碼傳檔",
+        },
+        {
+          id: "cross-platform",
+          src: "/assets/neardrop/neardrop-section-03-cross-platform.png",
+          alt: "NearDrop 跨平台連線：iPhone App 與 Android、Windows、Mac 瀏覽器",
+        },
+        {
+          id: "privacy",
+          src: "/assets/neardrop/neardrop-section-04-privacy.png",
+          alt: "NearDrop 離線優先：檔案不經雲端，點對點本地傳輸",
+        },
+        {
+          id: "use-cases",
+          src: "/assets/neardrop/neardrop-section-05-use-cases.png",
+          alt: "NearDrop 使用情境：旅行分檔、會議簡報、相簿備份、創作者交件",
+        },
+        {
+          id: "cta",
+          src: "/assets/neardrop/neardrop-section-06-cta.png",
+          alt: "NearDrop 為創作者設計的安靜傳檔工具 — 即將上線",
+        },
+      ],
+      features: [
+        {
+          title: "離線 P2P",
+          body: "個人熱點建立本地網絡，檔案點對點直傳，無需網路連線。",
+        },
+        {
+          title: "跨平台",
+          body: "Android、Windows、Mac 用瀏覽器即可收檔；iPhone 可用 NearDrop App 掃碼連線。",
+        },
+        {
+          title: "隱私優先",
+          body: "無需註冊帳號，檔案不會上傳至任何伺服器。",
+        },
+      ],
+    },
+    en: {
+      title: "NearDrop · Ange1a",
+      description:
+        "NearDrop is a fast offline file transfer app for iPhone. Turn on Personal Hotspot, share a QR code, and let nearby devices connect via browser or the NearDrop app — no internet, no cloud.",
+      eyebrow: "Ange1a · Offline file transfer",
+      heroTitle: "Transfer nearby,",
+      heroTitleAccent: "no internet needed",
+      heroSub:
+        "Create a room, turn on Personal Hotspot, and share a QR code. Nearby devices connect through a browser or the NearDrop app — files stay off the cloud.",
+      logoAlt: "NearDrop app icon",
+      comingSoonLabel: "Coming soon",
+      statusNote: "NearDrop is coming soon to the App Store.",
+      backToHub: "← Back to Ange1a",
+      sections: [
+        {
+          id: "hero",
+          src: "/assets/neardrop/neardrop-section-01-hero.png",
+          alt: "NearDrop hero: transfer nearby without internet — Personal Hotspot and QR connection",
+        },
+        {
+          id: "how-it-works",
+          src: "/assets/neardrop/neardrop-section-02-how-it-works.png",
+          alt: "NearDrop three steps: enable hotspot, show QR code, scan and transfer",
+        },
+        {
+          id: "cross-platform",
+          src: "/assets/neardrop/neardrop-section-03-cross-platform.png",
+          alt: "NearDrop cross-platform: iPhone app and browser upload on Android, Windows, Mac",
+        },
+        {
+          id: "privacy",
+          src: "/assets/neardrop/neardrop-section-04-privacy.png",
+          alt: "NearDrop offline-first: no cloud, peer-to-peer local transfer",
+        },
+        {
+          id: "use-cases",
+          src: "/assets/neardrop/neardrop-section-05-use-cases.png",
+          alt: "NearDrop use cases: travel sharing, meeting handoffs, photo backup, creator delivery",
+        },
+        {
+          id: "cta",
+          src: "/assets/neardrop/neardrop-section-06-cta.png",
+          alt: "NearDrop — a quiet transfer tool for creators, coming soon",
+        },
+      ],
+      features: [
+        {
+          title: "Offline P2P",
+          body: "Personal Hotspot creates a local network for direct device-to-device transfers.",
+        },
+        {
+          title: "Cross-platform",
+          body: "Android, Windows, and Mac connect via browser. iPhone can join with the NearDrop app.",
+        },
+        {
+          title: "Privacy-first",
+          body: "No account required. Your files are never uploaded to our servers.",
+        },
+      ],
+    },
+  },
   nav: {
     "zh-Hant": {
       products: "產品",
@@ -537,6 +659,7 @@ export const copy = {
       memoryshot: "MemoryShot",
       lumina: "晶靈 Lumina",
       refundReminder: "Refund Reminder",
+      neardrop: "NearDrop",
       jiyi: "記一筆",
       support: "支援",
       privacy: "私隱",
@@ -547,6 +670,7 @@ export const copy = {
       memoryshot: "MemoryShot",
       lumina: "晶靈 Lumina",
       refundReminder: "Refund Reminder",
+      neardrop: "NearDrop",
       jiyi: "記一筆",
       support: "Support",
       privacy: "Privacy",
@@ -604,7 +728,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "Ange1a 仲有咩其他產品？",
-      a: "除 Sparks、MemoryShot 同晶靈 Lumina 外，記一筆（iOS 多人分帳）即將上線。",
+      a: "除 Sparks、MemoryShot、晶靈 Lumina 同 NearDrop（iOS 離線傳檔）外，記一筆（iOS 多人分帳）即將上線。",
     },
   ],
   en: [
@@ -646,7 +770,7 @@ export const faqItems: Record<Locale, FAQItem[]> = {
     },
     {
       q: "What else does Ange1a make?",
-      a: "Alongside Sparks, MemoryShot, and Lumina (晶靈), 記一筆 (iOS group expense splitting) is coming soon.",
+      a: "Alongside Sparks, MemoryShot, Lumina (晶靈), and NearDrop (offline iOS file transfer), 記一筆 (iOS group expense splitting) is coming soon.",
     },
   ],
 };
