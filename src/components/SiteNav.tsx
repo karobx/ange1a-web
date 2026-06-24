@@ -83,6 +83,17 @@ function productItems(locale: Locale) {
       accent: false,
     },
     {
+      href: "/praxis/",
+      title: isZh ? "知行 Praxis" : "Praxis",
+      desc: isZh
+        ? "不讀完一本書，也能驗證它。七日實驗、誠實記錄、自己下結論。"
+        : "Test book methods in 7 days. Log honestly and decide for yourself.",
+      platform: "iOS",
+      logo: "/assets/praxis-logo.png",
+      logoAlt: isZh ? "知行 Praxis" : "Praxis",
+      accent: true,
+    },
+    {
       href: null,
       title: isZh ? "記一筆" : "記一筆 / Jiyi",
       desc: isZh

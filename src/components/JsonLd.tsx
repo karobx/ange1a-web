@@ -137,6 +137,36 @@ export function neardropApplicationJsonLd(locale: "zh-Hant" | "en") {
   };
 }
 
+export function praxisApplicationJsonLd(locale: "zh-Hant" | "en") {
+  const c = locale === "zh-Hant"
+    ? {
+        name: "知行 Praxis",
+        alternateName: "Praxis",
+        description:
+          "不讀完一本書，也能驗證它。挑一個七日實驗，每天誠實記錄，自己下結論——完全本地運作，無需帳號。",
+      }
+    : {
+        name: "Praxis",
+        alternateName: "知行 Praxis",
+        description:
+          "Test book methods in 7 days without reading cover to cover. Log honestly, decide for yourself. Fully offline, no account required.",
+      };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: c.name,
+    alternateName: c.alternateName,
+    description: c.description,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "iOS",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    author: { "@type": "Person", name: "Caroline Lee" },
+    url: "https://ange1a.com/praxis/",
+    image: "https://ange1a.com/assets/praxis-logo.png",
+  };
+}
+
 export function angelaProjectJsonLd(locale: "zh-Hant" | "en") {
   const isZh = locale === "zh-Hant";
 

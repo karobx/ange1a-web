@@ -199,6 +199,21 @@ export function ProductBento({ locale = "zh-Hant" }: ProductBentoProps) {
       comingSoon: true,
     },
     {
+      id: "praxis",
+      href: "/praxis/",
+      eyebrow: isZh ? "iOS 方法實驗室" : "iOS method lab",
+      eyebrowTone: "accent",
+      title: isZh ? "知行 Praxis" : "Praxis",
+      subtitle: isZh ? "七日驗證書中方法" : "Test book methods in 7 days",
+      description: isZh
+        ? "不讀完一本書，也能驗證它。挑七日實驗，誠實記錄，自己下結論。"
+        : "Pick a 7-day experiment, log honestly, and decide for yourself—no streaks, no guilt.",
+      logoSrc: "/assets/praxis-logo.png",
+      logoAlt: isZh ? "知行 Praxis" : "Praxis",
+      platform: "iOS",
+      ctaLabel: isZh ? "了解 Praxis" : "Explore Praxis",
+    },
+    {
       id: "jiyi",
       eyebrow: isZh ? "即將上線" : "Coming soon",
       eyebrowTone: "muted",

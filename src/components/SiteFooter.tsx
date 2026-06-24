@@ -38,6 +38,9 @@ export function SiteFooter() {
           <Link href="/neardrop/" className="hover:text-text-primary">
             {nav.neardrop}
           </Link>
+          <Link href="/praxis/" className="hover:text-text-primary">
+            {nav.praxis}
+          </Link>
           <span className="text-text-hint">{nav.jiyi} · {locale === "zh-Hant" ? "即將上線" : "Coming soon"}</span>
         </div>
       </div>

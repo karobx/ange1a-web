@@ -11,7 +11,7 @@ export const copy = {
     "zh-Hant": {
       title: "Ange1a",
       description:
-        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，晶靈 Lumina 結合八字命盤與水晶指引，NearDrop 離線快速傳檔，記一筆即將推出多人分帳 app。",
+        "Ange1a 出品創意工具。Sparks（念頭）跨平台想法孵化，MemoryShot 把截圖同現場記錄變成可搜尋的記憶，晶靈 Lumina 結合八字命盤與水晶指引，知行 Praxis 用七日實驗驗證書中方法，NearDrop 離線快速傳檔，記一筆即將推出多人分帳 app。",
       heroTitle: "創意工具，",
       heroTitleAccent: "為執行而生",
       heroSub:
@@ -20,7 +20,7 @@ export const copy = {
     en: {
       title: "Ange1a",
       description:
-        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. Lumina (晶靈) pairs Bazi charts with daily crystal guidance. NearDrop for offline file transfer. 記一筆 group expense splitting is coming soon.",
+        "Creative tools by Ange1a. Sparks (念頭) for cross-platform idea incubation. MemoryShot turns screenshots and captures into searchable memories. Lumina (晶靈) pairs Bazi charts with daily crystal guidance. Praxis tests book methods in seven-day experiments. NearDrop for offline file transfer. 記一筆 group expense splitting is coming soon.",
       heroTitle: "Creative tools",
       heroTitleAccent: "built to ship",
       heroSub:
@@ -660,6 +660,7 @@ export const copy = {
       lumina: "晶靈 Lumina",
       refundReminder: "Refund Reminder",
       neardrop: "NearDrop",
+      praxis: "知行 Praxis",
       jiyi: "記一筆",
       support: "支援",
       privacy: "私隱",
@@ -671,6 +672,7 @@ export const copy = {
       lumina: "晶靈 Lumina",
       refundReminder: "Refund Reminder",
       neardrop: "NearDrop",
+      praxis: "Praxis",
       jiyi: "記一筆",
       support: "Support",
       privacy: "Privacy",
@@ -1118,6 +1120,61 @@ export const luminaFaqItems: Record<Locale, FAQItem[]> = {
     {
       q: "How do I get support?",
       a: "Email info@ange1a.com. Product site: https://ange1a.com/lumina/",
+    },
+  ],
+};
+
+export const praxisFaqItems: Record<Locale, FAQItem[]> = {
+  "zh-Hant": [
+    {
+      q: "知行 Praxis 係咩？",
+      a: "知行 Praxis 係一款 iOS 方法實驗室 app，唔係讀書 app。你揀一本書入面嘅方法，用七日實驗睇佢喺你身上行唔行得通——每日記錄觀察，第七日自己下結論。",
+    },
+    {
+      q: "需要帳號或網路嗎？",
+      a: "唔需要。Praxis 完全喺裝置本地運作，唔使登入、唔使連網，亦唔會上傳任何資料到伺服器。",
+    },
+    {
+      q: "七日實驗點運作？",
+      a: "喺「探索」揀分類同書籍 → 揀一個方法 → 完成簡短設定 → 喺「實驗室」每日記錄一次 → 第七日做結案反思，自己決定留低、放下或調整再試。",
+    },
+    {
+      q: "斷咗一日記錄會失敗嗎？",
+      a: "唔會。Praxis 唔追連續打卡，亦唔發獎勵徽章。斷咗一日都係有用嘅數據——呢度測試嘅係方法，唔係你嘅意志力。",
+    },
+    {
+      q: "我嘅資料儲存喺邊？",
+      a: "所有實驗記錄、反思同結論只儲存喺你嘅 iPhone 本機（SwiftData）。刪除 app 會一併移除資料（除非你透過 iCloud 備份還原）。",
+    },
+    {
+      q: "點樣聯絡支援？",
+      a: "電郵 info@ange1a.com。產品官網：https://ange1a.com/praxis/",
+    },
+  ],
+  en: [
+    {
+      q: "What is Praxis?",
+      a: "Praxis is an iOS method lab—not a reading app. Pick a method from a book, run a 7-day experiment, log what you observe each day, and draw your own conclusion on day seven.",
+    },
+    {
+      q: "Does it require an account or internet?",
+      a: "No. Praxis runs fully on-device. No login, no network requests, and no data uploaded to our servers.",
+    },
+    {
+      q: "How does a 7-day experiment work?",
+      a: "Explore → pick a category and book → choose a method → complete setup → record daily in Lab → close with a reflection and your own verdict: keep, drop, or adjust and retry.",
+    },
+    {
+      q: "What if I miss a day?",
+      a: "That's not a failure. Praxis does not track streaks or award badges. A missed day is still useful data—we test the method, not your willpower.",
+    },
+    {
+      q: "Where is my data stored?",
+      a: "All experiment logs, reflections, and verdicts stay on your iPhone (SwiftData). Deleting the app removes local data unless restored from an iCloud backup.",
+    },
+    {
+      q: "How do I get support?",
+      a: "Email info@ange1a.com. Product site: https://ange1a.com/praxis/",
     },
   ],
 };
